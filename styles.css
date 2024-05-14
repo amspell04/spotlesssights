@@ -127,7 +127,7 @@ p{
 
 
 #img1{
-    background: url('before1.jpg') no-repeat;
+    background: url('imgs/before1.jpg') no-repeat;
     width: 150px;
     height: 195px;
     background-size: 100%;
@@ -137,7 +137,7 @@ p{
 }
 
 #img1:hover{
-    background: url('after1.jpg') no-repeat;
+    background: url('imgs/after1.jpg') no-repeat;
     background-size: 100%;
     transition: ease;
 }
@@ -146,14 +146,14 @@ p{
 #img2{
     width: 150px;
     height: 195px;
-    background: url('before2.jpg') no-repeat;
+    background: url('imgs/before2.jpg') no-repeat;
     margin: 10px;
     background-size: 100%;
     transition: ease;
 }
 
 #img2:hover{
-    background: url('after2.jpg') no-repeat;
+    background: url('imgs/after2.jpg') no-repeat;
     background-size: 100%;
 }
 
@@ -161,14 +161,14 @@ p{
 #img3{
     width: 150px;
     height: 195px;
-    background: url('before3.jpg') no-repeat;
+    background: url('imgs/before3.jpg') no-repeat;
     margin: 10px;
     background-size: 100%;
     transition: ease;
 }
 
 #img3:hover{
-    background: url('after3.jpg') no-repeat;
+    background: url('imgs/after3.jpg') no-repeat;
     background-size: 100%;
 }
 
