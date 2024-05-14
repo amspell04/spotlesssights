@@ -1,0 +1,196 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Reddit Sans", sans-serif;
+    color: #005396;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+h2{
+    font-weight: medium;
+    padding: 20px;
+    margin: 10px;
+}
+
+p{
+    font-weight: medium;
+    margin: 10px;
+    padding-left: 20px;
+}
+
+
+/* Call button */
+
+#callinside{
+    z-index: 10;
+    color:white;
+}
+
+#callbox{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    font-weight: medium;
+}
+
+#callbtn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    position: relative;
+    height: 50px;
+    width: 200px;
+    background-color:#005396;
+    cursor:pointer;
+    overflow: hidden;
+    transition: ease;
+}
+
+
+#callbtn:hover{
+    background-color: #3a90d6;
+    border:#005396;
+}
+
+#callbtn::before{
+    position: absolute;
+    content: '';
+    width: 180%;
+    height: 50%;
+    background: #005396;
+    transform: rotate(45deg);
+}
+
+#callbtn:hover::before{
+    animation: animate2 3s linear infinite;
+}
+
+@keyframes animate2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#callbtn:hover::after{
+    position:absolute;
+    content:'';
+    inset: 4px;
+    background-color: #3a90d6;
+}
+
+/* about section */
+
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#profile{
+    width: 100%;
+}
+
+
+
+/* image features */
+
+#logo{
+    width: 250px;
+}
+
+#imgbox{
+    height: 50vh;
+    background-color: #3a90d6;
+}
+
+#gallery{
+    display: flex;
+    justify-content: center;
+}
+
+#galleryslides{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+#img1{
+    background: url('before1.jpg') no-repeat;
+    width: 150px;
+    height: 195px;
+    background-size: 100%;
+    content: '';
+    margin: 10px;
+    transition: ease;
+}
+
+#img1:hover{
+    background: url('after1.jpg') no-repeat;
+    background-size: 100%;
+    transition: ease;
+}
+
+
+#img2{
+    width: 150px;
+    height: 195px;
+    background: url('before2.jpg') no-repeat;
+    margin: 10px;
+    background-size: 100%;
+    transition: ease;
+}
+
+#img2:hover{
+    background: url('after2.jpg') no-repeat;
+    background-size: 100%;
+}
+
+
+#img3{
+    width: 150px;
+    height: 195px;
+    background: url('before3.jpg') no-repeat;
+    margin: 10px;
+    background-size: 100%;
+    transition: ease;
+}
+
+#img3:hover{
+    background: url('after3.jpg') no-repeat;
+    background-size: 100%;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #3a90d6;
+    color: white;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact{
+    grid-column: 1/2;
+    text-align: center;
+}
+
+#form{
+    grid-column: 2/3;
+    text-align: center;
+}
