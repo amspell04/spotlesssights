@@ -8,8 +8,8 @@ body{
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
 
 }
 
@@ -32,6 +32,7 @@ p{
 #callinside{
     z-index: 10;
     color:white;
+    font-size: 80%;
 }
 
 #callbox{
@@ -39,7 +40,6 @@ p{
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 2%;
     font-weight: medium;
 }
 
@@ -48,9 +48,10 @@ p{
     align-items: center;
     justify-content: center;
     place-items: center;
+    text-align: center;
     position: relative;
     height: 50px;
-    width: 80%;
+    width: 200px;
     background-color:#005396;
     cursor:pointer;
     overflow: hidden;
@@ -97,17 +98,19 @@ p{
 #about{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 4%;
  
 }
 
 #profile-box{
     display:flex;
     justify-content: center;
+    width: 200px;
 }
 
 #profile{
     grid-column: 1/2;
-    width: 60%;
+    width: 100%;
 }
 
 
@@ -119,7 +122,7 @@ p{
 /* image features */
 
 #logo{
-    width: 80%;
+    width: 200px;
 }
 
 #imgbox{
@@ -127,19 +130,24 @@ p{
     background-color: #3a90d6;
 }
 
+#gallery{
+    display: flex;
+    justify-content: center;
+}
+
 #galleryslides{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    width: 100%;
+    width: 500px;
     height: 250px;
     justify-items: center;
-    align-items: center;
+    position: relative;
+    column-gap: 5%;
 }
 
 #img1{
     background: url('imgs/before1.jpg') no-repeat;
-    width: 90%;
+    width: 100%;
     height:100%;
     background-size: 100%;
     content: '';
@@ -152,9 +160,8 @@ p{
     transition: ease;
 }
 
-
 #img2{
-    width: 90%;
+    width: 100%;
     height:100%;
     background-size: 100%;
     content: '';
@@ -170,7 +177,7 @@ p{
 
 
 #img3{
-    width: 90%;
+    width: 100%;
     height:100%;
     background-size: 100%;
     content: '';
@@ -203,12 +210,11 @@ footer{
 
 #contact{
     grid-column: 1/2;
-    text-align: center;
+    text-align: left;
 }
 
 #form{
     grid-column: 2/3;
-    text-align: center;
 }
 
 #copyright{
