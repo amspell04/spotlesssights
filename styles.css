@@ -32,9 +32,15 @@ p{
 #callinside{
     z-index: 10;
     color:white;
-    font-size: 80%;
+    font-size: 60%;
+    line-height: 150%;
+    text-align: center;
 }
 
+.call{
+    margin:0;
+    padding: 0;
+}
 
 #callbox{
     grid-column: 2/3;
@@ -52,7 +58,7 @@ p{
     text-align: center;
     position: relative;
     height: 50px;
-    width: 200px;
+    width: 110px;
     background-color:#005396;
     cursor:pointer;
     overflow: hidden;
@@ -276,6 +282,29 @@ footer{
     margin: 0;
 }
 
+@media (min-width: 450px){
+    #callbtn{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+        position: relative;
+        height: 50px;
+        width: 130px;
+        background-color:#005396;
+        cursor:pointer;
+        overflow: hidden;
+        transition: ease;
+    }
+    #callinside{
+        z-index: 10;
+        color:white;
+        font-size: 80%;
+        line-height: 150%;
+        text-align: center;
+    }
+}
 
 @media (min-width: 700px){
 
@@ -287,6 +316,34 @@ footer{
         justify-items: center;
         position: relative;
         column-gap: 5%;
+    }
+
+    #callbtn{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+        position: relative;
+        height: 50px;
+        width: 200px;
+        background-color:#005396;
+        cursor:pointer;
+        overflow: hidden;
+        transition: ease;
+    }
+    #callinside{
+        z-index: 10;
+        color:white;
+        font-size: 90%;
+        line-height: 150%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .call{
+        padding-left: 8px;
     }
 }
 
