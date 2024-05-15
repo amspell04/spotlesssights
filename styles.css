@@ -23,7 +23,7 @@ h2{
 p{
     font-weight: medium;
     margin: 10px;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 
@@ -127,8 +127,8 @@ p{
 /* services section */
 #services-contact{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    height: 500px;
+    grid-template-rows: 1fr 1fr;
 }
 
 #services{
@@ -139,7 +139,6 @@ p{
 #contact{
     margin-left: 5%;
     text-align: left;
-    margin-bottom: 5%;
 }
 
 /* image features */
@@ -165,7 +164,7 @@ p{
     height: 250px;
     justify-items: center;
     position: relative;
-    column-gap: 5%;
+    column-gap: 1%;
 }
 
 #img1box{
@@ -305,6 +304,15 @@ footer{
         line-height: 150%;
         text-align: center;
     }
+    #galleryslides{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 500px;
+    height: 250px;
+    justify-items: center;
+    position: relative;
+    column-gap: 5%;
+}
 
     /* about section */
 
@@ -312,7 +320,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 4%;
- 
+
 }
 
 #profile-box{
@@ -325,7 +333,26 @@ footer{
     grid-column: 1/2;
     width: 100%;
 }
-} 
+
+
+/* services section */
+#services-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+}
+
+#services{
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#contact{
+    margin-left: 5%;
+    text-align: left;
+    margin-bottom: 5%;
+}
+}  
 
 @media (min-width: 700px){
 
