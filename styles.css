@@ -105,8 +105,9 @@ p{
 /* about section */
 
 #about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 4%;
  
 }
@@ -304,7 +305,27 @@ footer{
         line-height: 150%;
         text-align: center;
     }
+
+    /* about section */
+
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4%;
+ 
 }
+
+#profile-box{
+    display:flex;
+    justify-content: center;
+    width: 200px;
+}
+
+#profile{
+    grid-column: 1/2;
+    width: 100%;
+}
+} 
 
 @media (min-width: 700px){
 
