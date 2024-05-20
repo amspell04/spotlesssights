@@ -116,7 +116,7 @@ p{
 #profile-box{
     display:flex;
     justify-content: center;
-    width: 100px;
+    width: 200px;
 }
 
 #profile{
