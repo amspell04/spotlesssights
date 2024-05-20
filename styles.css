@@ -536,6 +536,11 @@ footer{
         width: 350px;
     }
 
+    #mainimg{
+        width: 100%;
+        height: 55vh;
+    }
+
 }
 
 @media (min-width: 1000px){
