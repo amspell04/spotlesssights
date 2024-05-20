@@ -5,6 +5,7 @@ body{
     color: #005396;
 }
 
+
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -120,7 +121,7 @@ p{
 
 #profile{
     grid-column: 1/2;
-    width: 100%;
+    width: 200%;
 }
 
 
@@ -147,29 +148,76 @@ p{
     width: 200px;
 }
 
-#imgbox{
-    height: 50vh;
-    background-color: #a8c3d8;
+#mainimg{
+    width: 100%;
+    height: 30vh;
 }
+
+#imgbox{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fadeInOut {
+    0%, 70%, 80%, 90%, 100%{
+        opacity: 1;
+    }
+    10%, 20%,30%, 40%, 50%, 60%{
+        opacity: 0;
+    }
+
+}
+
+
+#main {
+    background: url('imgs/close_up.jpg') no-repeat;
+    animation: fadeInOut 20s forwards;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    background-size: 100%;
+    height: 100%;
+    position: absolute;
+}
+ 
+#two {
+    background: url('imgs/roof.jpg') no-repeat;
+    width: 100%;
+    background-size: 100%;
+    height: 100%;
+}
+
 
 #gallery{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 #galleryslides{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 500px;
-    height: 250px;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 400px;
+    height: 1000px;
     justify-items: center;
     position: relative;
     column-gap: 1%;
+    row-gap: 2%;
+}
+
+@keyframes appear{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }
 
 #img1box{
     position:relative;
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 
@@ -194,7 +242,7 @@ p{
 
 #img2box{
     position:relative;
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 
@@ -217,19 +265,9 @@ p{
     background-size: 100%;
 }
 
-@keyframes appear{
-    0%, 100%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0;
-    }
-}
-
-
 #img3box{
     position:relative;
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 
@@ -304,17 +342,117 @@ footer{
         line-height: 150%;
         text-align: center;
     }
-    #galleryslides{
+    
+    #mainimg{
+        width: 100%;
+        height: 35vh;
+    }
+    
+
+#gallery{
+    display: flex;
+    justify-content: center;
+}
+
+#galleryslides{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 500px;
     height: 250px;
     justify-items: center;
     position: relative;
-    column-gap: 5%;
+    column-gap: 2%;
 }
 
-    /* about section */
+#img1box{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    grid-row: 1/4;
+}
+
+#img1{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: url('imgs/before1.jpg') no-repeat;
+    background-size: 100%;
+    animation: appear 10s infinite;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+#img1after{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: url('imgs/after1.jpg') no-repeat;
+    background-size: 100%;
+}
+
+#img2box{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    grid-row: 1/4;
+
+}
+
+#img2{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: url('imgs/before2.jpg') no-repeat;
+    background-size: 100%;
+    animation: appear 10s infinite;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+#img2after{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: url('imgs/after2.jpg') no-repeat;
+    background-size: 100%;
+}
+
+@keyframes appear{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+
+#img3box{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    grid-row: 1/4;
+}
+
+#img3{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: url('imgs/before3.jpg') no-repeat;
+    background-size: 100%;
+    animation: appear 10s infinite;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+#img3after{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: url('imgs/after3.jpg') no-repeat;
+    background-size: 100%;
+}
+
 
 #about{
     display: grid;
@@ -326,7 +464,7 @@ footer{
 #profile-box{
     display:flex;
     justify-content: center;
-    width: 200px;
+    width: 300px;
 }
 
 #profile{
@@ -334,8 +472,6 @@ footer{
     width: 100%;
 }
 
-
-/* services section */
 #services-contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -393,6 +529,13 @@ footer{
     .call{
         padding-left: 8px;
     }
+
+    #profile-box{
+        display:flex;
+        justify-content: center;
+        width: 350px;
+    }
+
 }
 
 @media (min-width: 1000px){
@@ -400,7 +543,7 @@ footer{
         #profile-box{
             display:flex;
             justify-content: center;
-            width: 250px;
+            width: 450px;
         }
 
         #galleryslides{
@@ -412,6 +555,12 @@ footer{
             position: relative;
             column-gap: 5%;
         }
+
+        #mainimg{
+            width: 100%;
+            height: 65vh;
+        }
+        
 }
 
 
@@ -427,6 +576,17 @@ footer{
             column-gap: 5%;
         }
      
+        #mainimg{
+            width: 100%;
+            height: 75vh;
+        }
+
+        #profile-box{
+            display:flex;
+            justify-content: center;
+            width: 500px;
+        }
+        
 }
 
 
@@ -435,7 +595,7 @@ footer{
         #profile-box{
             display:flex;
             justify-content: center;
-            width: 300px;
+            width: 500px;
         }
 
         #galleryslides{
@@ -447,5 +607,33 @@ footer{
             position: relative;
             column-gap: 5%;
         }
-     
+        #mainimg{
+            width: 100%;
+            height: 85vh;
+        }
+        
     }
+
+    @media (min-width: 1500px){
+        #profile-box{
+            display:flex;
+            justify-content: center;
+            width: 600px;
+        }
+
+        #galleryslides{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 1050px;
+            height: 500px;
+            justify-items: center;
+            position: relative;
+            column-gap: 5%;
+        }
+        #mainimg{
+            width: 100%;
+            height: 95vh;
+        }
+        
+    }
+
