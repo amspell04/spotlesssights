@@ -25,6 +25,7 @@ p{
     font-weight: medium;
     margin: 10px;
     padding-left: 40px;
+    line-height: 160%;
 }
 
 
@@ -34,7 +35,7 @@ p{
     z-index: 10;
     color:white;
     font-size: 60%;
-    line-height: 150%;
+    line-height: 160%;
     text-align: center;
 }
 
@@ -134,6 +135,7 @@ p{
 }
 #text-about{
     text-align: center;
+    padding: 3%;
     line-height: 200%;
 }
 
@@ -148,6 +150,7 @@ p{
 #services{
     margin-left: 5%;
     margin-bottom: 5%;
+    line-height: 160%;
 }
 
 #contact{
@@ -323,7 +326,7 @@ footer{
     margin: 0;
     align-items: baseline;
     width: 200px;
-    padding-top: 2%;
+    padding: 3%;
 }
 
 #copyright{
@@ -333,7 +336,7 @@ footer{
     margin: 0;
 }
 
-@media (min-width: 450px){
+@media (min-width: 600px){
     #callbtn{
         display:flex;
         align-items: center;
