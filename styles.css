@@ -108,7 +108,7 @@ p{
 
 #about{
     display: grid;
-    grid-template-rows: 1fr 400px;
+    grid-template-rows: 1fr 380px;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     justify-content: center;
