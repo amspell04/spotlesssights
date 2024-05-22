@@ -7,11 +7,11 @@ body{
 
 
 header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     margin-left: 2%;
     margin-right: 2%;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
 h2{
@@ -23,9 +23,9 @@ h2{
 
 p{
     font-weight: medium;
-    margin: 10px;
-    padding-left: 40px;
-    line-height: 160%;
+    text-align: center;
+    margin: 3%;
+    line-height: 200%;
 }
 
 
@@ -37,18 +37,21 @@ p{
     font-size: 60%;
     line-height: 160%;
     text-align: center;
+    align-items: center;
 }
 
 .call{
     margin:0;
     padding: 0;
+    text-decoration: none;
+    color: white;
 }
 
 #callbox{
-    grid-column: 2/3;
     display: flex;
     justify-content: right;
     align-items: center;
+    text-decoration: none;
     font-weight: medium;
 }
 
@@ -108,7 +111,7 @@ p{
 
 #about{
     display: grid;
-    grid-template-rows: 1fr 380px;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     justify-content: center;
@@ -143,7 +146,7 @@ p{
 /* services section */
 #services-contact{
     display: grid;
-    height: 500px;
+    height: 650px;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -158,6 +161,21 @@ p{
     text-align: left;
 }
 
+#email{
+    color:#005396;
+    font-weight: medium;
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+}
+
+#calltext{
+    color:#005396;
+    font-weight: medium;
+    display: flex;
+    justify-content: center;
+}
+
 /* image features */
 
 #logo{
@@ -166,7 +184,7 @@ p{
 
 #mainimg{
     width: 100%;
-    height: 45vh;
+    height: 42vh;
 }
 
 #imgbox{
@@ -208,7 +226,7 @@ p{
 #gallery{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 2%;
 }
 
 #galleryslides{
@@ -337,6 +355,24 @@ footer{
 }
 
 @media (min-width: 600px){
+
+    p{
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    #email{
+        justify-content: left;
+        line-height: 200%;
+        margin-left: 10%;
+    }
+
+    #calltext{
+        justify-content: left;
+        line-height: 200%;
+        margin-left: 15%;
+    }
+
     #callbtn{
         display:flex;
         align-items: center;
@@ -504,7 +540,7 @@ footer{
 #services-contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 400px;
+    height: 450px;
 }
 
 #services{
