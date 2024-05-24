@@ -228,14 +228,14 @@ p{
 #gallery{
     display: flex;
     justify-content: center;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
 }
 
 #galleryslides{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 400px;
-    height: 1050px;
+    height: 1000px;
     justify-items: center;
     position: relative;
     column-gap: 1%;
