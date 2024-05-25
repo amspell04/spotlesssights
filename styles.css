@@ -113,10 +113,11 @@ p{
 
 #about{
     display: grid;
-    grid-template-rows: 200px 450px;
+    grid-template-rows: 200px 1fr;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     row-gap: 4%;
+    margin-bottom: 5%;
  
 }
 
