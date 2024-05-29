@@ -207,7 +207,7 @@ p{
 
 #main {
     background: url('imgs/close_up.jpg') no-repeat;
-    animation: fadeInOut 20s forwards;
+    animation: fadeInOut 10s forwards;
     animation-delay: 10s;
     animation-iteration-count: infinite;
     width: 100%;
