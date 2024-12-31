@@ -449,7 +449,7 @@ footer{
 
 @media (min-width: 650px){
     #about{
-        grid-template-rows: 1fr 500px;
+        grid-template-rows: 1fr 570px;
     }
 
     #services-contact{
@@ -477,6 +477,12 @@ footer{
         transition: 500ms;
     }
 
+}
+
+@media (min-width: 800px){
+    #about{
+        grid-template-rows: 1fr 500px;
+    }
 }
 
 @media (min-width: 900px){
