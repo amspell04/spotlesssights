@@ -237,7 +237,7 @@ p{
 /* image features */
 
 #logo{
-    width: 200px;
+    width: 100px;
     padding: 5px;
     background-color: white;
 }
@@ -246,7 +246,7 @@ p{
     grid-column: 1/3;
     grid-row: 2/3;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
 }
 
 #imgbox{
@@ -447,7 +447,14 @@ footer{
     margin: 0;
 }
 
-@media (min-width: 650px){
+@media (min-width: 550px){
+
+    #logo{
+        width: 200px;
+        padding: 5px;
+        background-color: white;
+    }
+
     #about{
         grid-template-rows: 1fr 570px;
     }
