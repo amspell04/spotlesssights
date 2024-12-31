@@ -11,7 +11,7 @@ header{
     grid-column: 1/3;
     grid-row: 1/2;
     display: flex;
-    padding: 15px;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
 }
@@ -31,7 +31,7 @@ header{
 
 #headernav a{
     padding: 5px;
-    font-size: 50%;
+    font-size: 40%;
     text-decoration: none;
     margin: 5px;
     color: white;
@@ -142,7 +142,7 @@ p{
 
 #about{
     display: grid;
-    grid-template-rows: 400px 650px;
+    grid-template-rows: 300px 950px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     row-gap: 4%;
@@ -185,7 +185,7 @@ p{
     background-color: hsl(207, 100%, 29%);
     color: white;
     margin: 2%;
-    grid-template-rows: 850px 270px;
+    grid-template-rows: 750px 270px;
 }
 
 #services-contactimg{
@@ -237,7 +237,7 @@ p{
 /* image features */
 
 #logo{
-    width: 100px;
+    width: 90px;
     padding: 5px;
     background-color: white;
 }
@@ -291,7 +291,7 @@ p{
 
 .gallery{
     margin-top: 20px;
-    height: 800px;
+    height: 600px;
 }
 
 .galleryimages{
@@ -450,13 +450,13 @@ footer{
 @media (min-width: 550px){
 
     #logo{
-        width: 200px;
+        width: 170px;
         padding: 5px;
         background-color: white;
     }
 
     #about{
-        grid-template-rows: 1fr 570px;
+        grid-template-rows: 1fr 650px;
     }
 
     #services-contact{
@@ -476,7 +476,7 @@ footer{
 
     #headernav a{
         padding: 10px;
-        font-size: 70%;
+        font-size: 50%;
         text-decoration: none;
         margin: 5px;
         color: white;
@@ -489,6 +489,20 @@ footer{
 @media (min-width: 800px){
     #about{
         grid-template-rows: 1fr 500px;
+    }
+
+    #logo{
+        width: 200px;
+    }
+
+    #headernav a{
+        padding: 10px;
+        font-size: 70%;
+        text-decoration: none;
+        margin: 5px;
+        color: white;
+        background-color: #005396;
+        transition: 500ms;
     }
 }
 
