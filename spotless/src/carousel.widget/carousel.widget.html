@@ -1,0 +1,13 @@
+<div id="carousel">
+
+    <button mat-icon-button (click)="decreaseind()">
+        <mat-icon>arrow_back_ios</mat-icon> <!-- Use the name of the icon you want -->
+      </button>
+    <img id="currimage" [src]="photos[index]" alt="image">
+
+<button mat-icon-button (click)="increaseind()">
+    <mat-icon>arrow_forward_ios</mat-icon> <!-- Use the name of the icon you want -->
+  </button>
+</div>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

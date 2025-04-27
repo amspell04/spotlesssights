@@ -1,0 +1,11 @@
+#carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#currimage{
+    width: 50%;
+    margin: 10px;
+}
