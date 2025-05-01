@@ -163,7 +163,7 @@ li{
     text-decoration: none;
     padding: 10px;
     border-radius: 20px;
-    transition: 3s ease;
+    transition: ease;
 }
 
 #overlaybutton:hover{
@@ -182,9 +182,19 @@ li{
         padding: 20px;
     }
 
+    .mainheader{
+        width: 500px;
+    }
+
+
     .aboutimg img{
         width: 70%;
       
+    }
+
+    #overlaybutton{
+        width: 250px;
+        font-size: medium;
     }
 
     #logo{
@@ -199,6 +209,11 @@ li{
     .aboutimg img{
         width: 50%;
       
+    }
+
+    #overlaybutton{
+        width: 300px;
+        font-size: large;
     }
     
     p, ul{
