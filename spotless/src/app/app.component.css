@@ -9,14 +9,20 @@ h2{
 }
 
 p, ul{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffffeb;
-    padding: 20px;
+    padding: 30px;
     color: #005396;
     border-radius: 20px;
-    margin: 20px;
     line-height: 150%;
-    font-size: medium;
 
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 .aboutimg{
@@ -27,10 +33,9 @@ p, ul{
 }
 
 .aboutimg img{
-    width: 80%;
+    width: 100%;
     margin: 20px;
-
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+}
 
 footer{
     display: flex;
@@ -38,14 +43,11 @@ footer{
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    background-color: #95aec7;
+    margin-top:60px;
+    background-color: #005396;
 }
 
-a{
 
-    text-decoration: underline;
-    color: #005396;
-}
 
 .headers{
     width: 100px;
@@ -64,10 +66,23 @@ a{
     margin-left: -10px;
 }
 
+.mainheaderbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: -20px;
+    padding-bottom: 0;
+}
+
+.mainheader{
+    width: 330px;
+}
+
 #reviews{
     width: 100%;
     margin: 0;
-    background-color: #005396;
+
 }
 
 #footerlogo{
@@ -93,9 +108,12 @@ mat-toolbar{
 #services{
     padding-top: 0;
     margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
     margin: 10px;
     list-style:square;
 }
+
 
 li{
     margin: 20px;
@@ -103,7 +121,8 @@ li{
 
 
 #carouselcontainer{
-    margin: 20px;
+    padding: 40px;
+    background-color: #e8f1f9;
     margin-bottom: 30px;
 }
 
@@ -112,6 +131,43 @@ li{
     padding-bottom: 0;
 }
 
+#vidcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#topbtna{
+    color:white;
+    text-decoration: none;
+}
+
+.contacta{
+    text-decoration: underline;
+    color: #005396;
+
+}
+
+#overlaybutton{
+    position: absolute;
+    z-index: 1000;
+    background-color: #005396;
+    top: 75%;
+    color: white;
+    border: 0px;
+    font-size: smaller;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 3s ease;
+}
+
+#overlaybutton:hover{
+    background-color: #e8f1f9;
+    color: #005396;
+}
 
 @media screen and (min-width: 580px) {
    

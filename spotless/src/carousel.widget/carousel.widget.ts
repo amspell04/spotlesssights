@@ -16,20 +16,21 @@ export class CarouselWidget{
   intervalid: any;
   autoRunning: boolean = false; // Flag to track if auto is running
 
+  // To disable the button
+  
+  // To enable the button
 
   decreaseind(){
     console.log("decreasing index")
 
-    if(this.index > 0){
         this.index -= 1 
-    }
+
     
 }
 
     increaseind(){
-        if(this.index < 4){
+
             this.index += 1 
-        }
         console.log("increasing index")
     }
 
