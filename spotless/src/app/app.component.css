@@ -142,7 +142,13 @@ li{
 }
 
 #topbtna{
+    font-weight: bold;
     color:white;
+    text-decoration: none;
+}
+
+#topbtna:hover{
+    color:#005396;
     text-decoration: none;
 }
 
@@ -163,7 +169,7 @@ li{
     text-decoration: none;
     padding: 10px;
     border-radius: 20px;
-    transition: ease;
+    transition: 1s ease;
 }
 
 #overlaybutton:hover{
@@ -187,10 +193,7 @@ li{
     }
 
 
-    .aboutimg img{
-        width: 70%;
-      
-    }
+   
 
     #overlaybutton{
         width: 250px;
@@ -205,9 +208,24 @@ li{
   }
 
   @media screen and (min-width: 1200px) {
-   
+
+   p{
+    margin: 20px;
+   }
+
+   #services{
+    margin: 40px;
+   }
+
+    .aboutimg {
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+      }
+
     .aboutimg img{
-        width: 50%;
+        overflow: hidden;
+        position: absolute;
       
     }
 
