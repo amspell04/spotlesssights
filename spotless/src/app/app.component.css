@@ -124,6 +124,8 @@ li{
     padding: 40px;
     background-color: #e8f1f9;
     margin-bottom: 30px;
+    border:#005396 solid;
+    border-width: 3px 0px 3px 0px;
 }
 
 #about-p{
