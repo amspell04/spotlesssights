@@ -1,0 +1,83 @@
+.carousel{
+    /* height: 100%;
+    display: flex;    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    white-space: nowrap; 
+    padding: 40px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;  */
+    display: flex;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    animation: slideshow 35s linear infinite;
+}
+
+.wrapped{
+    padding: 20px;
+    background-color: #e8f1f9;
+    margin-bottom: 20px;
+    border:#005396 solid;
+    border-width: 3px 0px 3px 0px;
+}
+
+@keyframes slideshow {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.reviewbox{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto; 
+    box-shadow: rgba(0, 0, 0, 0.167) 0px 5px 10px, hsla(0, 0%, 0%, 0.16) 0px 6px 6px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #005396;
+    color: white;
+    font-weight: medium;
+    font-size: small;
+    width: 250px;
+    border-radius: 20px;
+    height: 150px;
+    scroll-snap-align: start; 
+}
+
+.stars{
+    width: 150px;
+}
+
+
+.overflow{
+    text-wrap: wrap; 
+    
+}
+
+
+@media screen and (min-width: 600px) {
+   
+
+  }
+
+
+@media screen and (min-width: 1200px) {
+   
+
+    
+  }
