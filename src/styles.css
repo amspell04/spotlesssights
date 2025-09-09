@@ -2,3 +2,13 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.btn-primary {
+  background-color: #ACBFD4 !important;
+  color: #005396 !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #005396 !important;
+  color: white !important;
+}

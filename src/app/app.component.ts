@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { CarouselWidget } from '../carousel.widget/carousel.widget';
-import { ReviewWidget } from '../review.widget/review.widget';
+
 
 @Component({
   selector: 'app-root',
-  imports: [MatToolbarModule, MatButtonModule, MatIconModule, CarouselWidget, ReviewWidget],
+  imports: [RouterOutlet
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
