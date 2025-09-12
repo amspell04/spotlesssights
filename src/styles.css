@@ -1,11 +1,20 @@
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body{
+     margin: 0; 
+    background-color: #EBF7FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
 .btn-primary {
   background-color: #ACBFD4 !important;
   color: #005396 !important;
   border: none !important;
+  border-radius: 25px !important;
+  padding: 10px 20px !important;
+  font-weight: bold !important;
+  width: 220px !important;
 }
 
 .btn-primary:hover {

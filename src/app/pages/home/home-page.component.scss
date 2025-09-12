@@ -1,0 +1,45 @@
+ h3{
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+ h4{
+    font-weight: bolder;
+}
+
+li{
+    font-size: larger;
+    padding: .2rem;
+}
+
+
+.subtext{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+}

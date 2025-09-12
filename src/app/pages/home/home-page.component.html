@@ -1,51 +1,64 @@
+
 <app-header-nav></app-header-nav>
 
+<div class="container-fluid" style="background-color: #EBF7FF; color: #005396;"> 
 
-<div class="d-flex justify-content-center align-items-center">
-    <div style="margin: 2rem;">
-        <app-card [title]="'Explore the World with Us'"
-                [body]="'Discover breathtaking destinations, curated travel guides, and exclusive deals to make your next adventure unforgettable.'">
-        </app-card>
-    </div>
+<div class="section">
 
-    <div style="margin: 2rem;">
-        <h4>Enjoy sparkling windows, satisfaction guaranteed</h4>
-        <h5>Book a free quote today!</h5>
+    <div style="padding: 2rem; max-width: 500px;">
+        <h3>Enjoy sparkling windows, satisfaction guaranteed</h3>
+        <h6>Book a free quote today!</h6>
 
-        <p>Call us: XXX-XXX-XXXX</p>
-        <p>Email: alexray2003&#64;gspotless.com</p>
+        <div class="subtext">
+            <p>Call us: XXX-XXX-XXXX</p>
+            <p>Email: alexray2003&#64;gspotless.com</p>
+        </div>
 
         <button class="btn btn-primary shadow-sm">Get a Free Quote</button>
+    </div>
 
+     <div style="padding: 2rem;">
+        <app-card [title]="'Explore the World with Us'"
+                [body]=currentReview [showIcons]="true">
+        </app-card>
     </div>
 </div>
 
-<div class="d-flex align-items-center flex-column" style="margin: 4rem;">
-    <h2>Providing quality services</h2>
-    <h4>...and giving back to a meaningful cause</h4>
+
+<div class="d-flex align-items-center flex-column" style="padding: 2rem;">
+    <h3>Providing quality services</h3>
+    <h6>...and giving back to a meaningful cause</h6>
 </div>
 
-<div class="d-flex justify-content-center align-items-center">
+<div class="section">
 
-    <div style="margin: 2rem;">
+    <div style="padding: 2rem;">
         <h4>Our Services</h4>
-
-        <p>Interior</p>
-        <p>Exterior</p>
+        <div class="subtext">
+            <ul>
+                <li>Resedential Cleaning</li>
+                <li>Commercial Cleaning</li>
+                <li>Gutter Cleaning</li>
+                <li>Screen Repair</li>
+                <li>Pressure Washing</li>
+            </ul>
+        </div>
 
         <button class="btn btn-primary shadow-sm">Get a Free Quote</button>
 
     </div>
 
-    <div style="margin: 2rem;">
-        <app-card [title]="'Explore the World with Us'"
-                [body]="'Discover breathtaking destinations, curated travel guides, and exclusive deals to make your next adventure unforgettable.'">
+    <div style="padding: 2rem;">
+        <app-card [title]="'Panes for Parkinsons'"
+                [body]="panesForParkinsons">
         </app-card>
     </div>
 
 </div>
 
-<div class="d-flex align-items-center flex-column" style="margin: 4rem;">
-    <h4>Every home deserves to shine...</h4>
-    <h2>Let us make yours a little brighter</h2>
+<div class="d-flex align-items-center flex-column" style="padding: 2rem;">
+    <h6>Every home deserves to shine...</h6>
+    <h3 style="text-align: center;">Let us make yours a little brighter</h3>
+</div>
+
 </div>
