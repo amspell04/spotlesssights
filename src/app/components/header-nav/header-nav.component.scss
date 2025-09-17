@@ -1,0 +1,19 @@
+.logo{
+    width: 100px;
+}
+
+#header{
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+nav{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    padding-right: 2rem;
+    transition: 500ms ease;
+}
+
+nav:hover{
+    text-decoration: underline;
+}
