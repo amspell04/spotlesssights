@@ -4,20 +4,32 @@ html, body { height: 100%; }
 body{
      margin: 0; 
     background-color: #EBF7FF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  #005396
 }
 
+
+
 .btn-primary {
-  background-color: #ACBFD4 !important;
-  color: #005396 !important;
+  background-color: #005396 !important;
+  color: white !important;
   border: none !important;
   border-radius: 25px !important;
   padding: 10px 20px !important;
   font-weight: bold !important;
-  width: 220px !important;
+  width: 300px !important;
 }
 
 .btn-primary:hover {
-  background-color: #005396 !important;
+  background-color: #5883a6 !important;
   color: white !important;
+}
+
+h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: bold !important;
 }

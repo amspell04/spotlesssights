@@ -1,16 +1,18 @@
 .logo{
-    width: 100px;
+    width: 65px;
 }
 
 #header{
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    position: absolute;
 }
 
 nav{
     color: white;
     font-weight: bold;
-    font-size: larger;
-    padding-right: 2rem;
+    font-size: medium;
+    padding-right: .5rem;
     transition: 500ms ease;
 }
 
