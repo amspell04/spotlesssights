@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, Inject, PLATFORM_ID, signal } from "@angular/core";
-import { HeaderNavComponent } from "../../components/header-nav/header-nav.component";
-import { CardComponent } from "../../components/card/card.component";
+
 import { isPlatformBrowser } from "@angular/common";
+import { ReviewComponent } from "../sections/reviews/reviews.component";
+import { NavBarComponent } from "../sections/navbar/navbar.component";
 
 @Component({
     selector: 'app-home-page',
-    imports: [HeaderNavComponent, CardComponent],
+    imports: [ReviewComponent, NavBarComponent],
     standalone: true,
     templateUrl: './home-page.component.html',
     styleUrl: './home-page.component.scss',
