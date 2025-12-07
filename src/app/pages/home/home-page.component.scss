@@ -12,8 +12,28 @@
     overflow: hidden;
 }
 
+.header-text {
+  position: absolute;
+  bottom: 10px;
+  font-size: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #005396;
+  width: 100%;
+}
 
-h4, h1{
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h4{
     font-weight: bolder;
     padding-bottom: 1rem;
 }

@@ -3,10 +3,11 @@ import { AfterViewInit, Component, Inject, PLATFORM_ID, signal } from "@angular/
 import { isPlatformBrowser } from "@angular/common";
 import { ReviewComponent } from "../sections/reviews/reviews.component";
 import { NavBarComponent } from "../sections/navbar/navbar.component";
+import { ContactComponent } from "../sections/contact/contact.component";
 
 @Component({
     selector: 'app-home-page',
-    imports: [ReviewComponent, NavBarComponent],
+    imports: [ReviewComponent, NavBarComponent, ContactComponent],
     standalone: true,
     templateUrl: './home-page.component.html',
     styleUrl: './home-page.component.scss',

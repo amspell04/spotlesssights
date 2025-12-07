@@ -1,0 +1,39 @@
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+  background-image: url('/imgs/close-up.jpg') ;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: center;
+}
+
+.contact-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 320px;
+  height: 320px;
+  background-color: white;
+  opacity: 70%;
+  text-align: center;
+
+}
+
+.contact-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact-header{
+  font-size: x-large;
+}
