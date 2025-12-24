@@ -1,0 +1,19 @@
+#about-img{
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.subtext{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (min-width: 600px){
+    .subtext{
+        font-size: larger;
+    }
+    
+}

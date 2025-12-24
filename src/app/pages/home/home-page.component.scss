@@ -2,6 +2,7 @@
 
 #header-img{
     width: 400%;
+    height: 90vh;
 }
 
 .header-container{
@@ -14,7 +15,7 @@
 
 .header-text {
   position: absolute;
-  bottom: 10px;
+  bottom: 4.5rem;
   font-size: 200px;
   left: 50%;
   transform: translateX(-50%);
@@ -24,12 +25,12 @@
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -52,6 +53,7 @@ li{
 }
 
 .sub-header{
+    font-size: large;
     font-weight: bold;
     padding-bottom: .2rem;
 }
@@ -61,6 +63,10 @@ li{
     margin-left: 1.5rem;
     margin-bottom: 2rem;
 }
+
+
+
+
 
 .bg{
   height: 100%;
@@ -83,3 +89,19 @@ li{
     align-items: center;
 }
 
+
+@media (min-width: 600px){
+    .subtext{
+        font-size: larger;
+    }
+}
+
+@media(min-width: 1000px){
+    .sub-header{
+        text-align: center;
+    }
+     .reason-subs{
+        text-align: center;
+        width: 350px;
+    }
+}

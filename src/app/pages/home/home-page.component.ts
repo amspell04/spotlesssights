@@ -4,10 +4,11 @@ import { isPlatformBrowser } from "@angular/common";
 import { ReviewComponent } from "../sections/reviews/reviews.component";
 import { NavBarComponent } from "../sections/navbar/navbar.component";
 import { ContactComponent } from "../sections/contact/contact.component";
+import { AboutComponent } from "../sections/about/about.component";
 
 @Component({
     selector: 'app-home-page',
-    imports: [ReviewComponent, NavBarComponent, ContactComponent],
+    imports: [ReviewComponent, NavBarComponent, ContactComponent, AboutComponent],
     standalone: true,
     templateUrl: './home-page.component.html',
     styleUrl: './home-page.component.scss',
