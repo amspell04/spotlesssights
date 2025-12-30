@@ -5,9 +5,9 @@
   <div class="collapsed-bg">
      <ul>
      @if(isNothome()){
-          <li><a href="/">Home</a></li>
+          <li><a [routerLink]="['/']">Home</a></li>
      }
-     <li><a href="/gallery">Gallery</a></li>
+     <li><a [routerLink]="['/gallery']">Gallery</a></li>
      <li><a href="https://clienthub.getjobber.com/client_hubs/4d9f8932-6bce-4a6a-8c79-3bce14d04a42/public/work_request/new?source=social_media">Schedule Quote Online</a></li>
      </ul>
   </div>
