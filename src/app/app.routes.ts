@@ -8,4 +8,11 @@ export const routes: Routes = [
                 './pages/home/home-page.component'
             ).then((m) => m.HomePageComponent),
     },
+    {
+        path: 'gallery',
+        loadComponent: () =>
+            import(
+                './pages/gallery/gallery-page.component'
+            ).then((m) => m.GalleryPageComponent),
+    },
 ];

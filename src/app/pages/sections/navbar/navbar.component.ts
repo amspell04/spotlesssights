@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, Inject, PLATFORM_ID, signal } from "@angular/core";
 
 import { isPlatformBrowser } from "@angular/common";
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'app-navbar',
@@ -11,5 +12,13 @@ import { isPlatformBrowser } from "@angular/common";
 })
 export class NavBarComponent{
 
+    constructor(private router: Router) {}
     
+    isNothome(): boolean {
+        return this.router.url !== '/';
+    }
+
+    navHome(): void {
+        this.router.navigate(['/']);
+    }
 }

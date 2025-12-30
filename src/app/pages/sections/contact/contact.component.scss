@@ -18,13 +18,13 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  width: 320px;
+  width: 350px;
   height: 400px;
   background-color: white;
   border: .5rem outset #d2e8ff81;
   text-align: center;
-
 }
+
 
 a{
   text-decoration: none;
@@ -68,12 +68,23 @@ button{
 }
 
 
-@media (min-width: 700px){
+@media (min-width: 600px){
+    .subtext{
+        font-size: larger;
+    }
+
+    h4{
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 760px){
   .contact-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 600px;
     overflow: hidden;
     position: relative;
     height: 500px;
@@ -87,8 +98,5 @@ button{
   .subtext{
       font-size: larger;
   }
-    
-  h4{
-    padding-left: 2rem
-  }
+
 }

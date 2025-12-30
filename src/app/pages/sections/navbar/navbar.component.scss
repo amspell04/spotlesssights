@@ -8,7 +8,7 @@
 
 .navbar-logo{
   margin: 1.5rem;
-  width: 300px;
+  width: 200px;
 }
 
 
@@ -22,15 +22,22 @@ li{
   list-style-type: none;
   padding: .5rem;
   font-size: large;
+  font-weight: 500;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 li:hover{
-  color:#D2E8FF
+  color:#D2E8FF;
+  text-decoration: underline;
 }
 
 .navbar-toggler{
   margin: 2rem;
-  height: 40px;
+  height: 30px;
   background-image: url('/imgs/navbar-options.png');
   background-repeat: no-repeat;
   background-size: contain;

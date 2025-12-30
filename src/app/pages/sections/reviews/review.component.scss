@@ -5,7 +5,7 @@
   height: 400px;
   background-image: url('/imgs/review-bg.png') ;
   background-repeat: no-repeat;
-  background-size: 300%;
+  background-size: 250%;
   background-position: center;
 }
 
@@ -38,4 +38,12 @@
 @keyframes scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+
+@media (min-width: 760px){
+  .carousel-container {
+  background-size: 100%;
+}
+
+  
 }

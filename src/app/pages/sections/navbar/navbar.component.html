@@ -4,15 +4,18 @@
 <div class="collapse" id="navbarToggleExternalContent">
   <div class="collapsed-bg">
      <ul>
-     <li><a>Gallery</a></li>
-     <li><a>Schedule Quote Online</a></li>
+     @if(isNothome()){
+          <li><a href="/">Home</a></li>
+     }
+     <li><a href="/gallery">Gallery</a></li>
+     <li><a href="https://clienthub.getjobber.com/client_hubs/4d9f8932-6bce-4a6a-8c79-3bce14d04a42/public/work_request/new?source=social_media">Schedule Quote Online</a></li>
      </ul>
   </div>
 </div>
 <nav>
   <div>
      <div class="navbar-container">
-     <img src="imgs/header-logo.png" alt="Spotless Sights Logo" class="navbar-logo">
+     <img src="imgs/header-logo.png" alt="Spotless Sights Logo" class="navbar-logo" (click)="navHome()">
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-options"></span>
     </button>

@@ -5,6 +5,7 @@ import { ReviewComponent } from "../sections/reviews/reviews.component";
 import { NavBarComponent } from "../sections/navbar/navbar.component";
 import { ContactComponent } from "../sections/contact/contact.component";
 import { AboutComponent } from "../sections/about/about.component";
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'app-home-page',
@@ -54,4 +55,5 @@ export class HomePageComponent implements AfterViewInit{
 
         return nextReview
     }
+
 }
