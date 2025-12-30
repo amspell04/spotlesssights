@@ -1,0 +1,15 @@
+
+<app-navbar></app-navbar>
+
+
+<div class="d-flex flex-column align-items-center justify-content-center p-3">
+    <div class="gallery-grid">
+        @for(image of galleryImages; track image) {
+            <div class="gallery-item">
+                <img [src]="image" alt="Gallery Image" class="gallery-img">
+            </div>
+        }
+    </div>
+
+</div>
+  
