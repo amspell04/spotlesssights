@@ -1,0 +1,102 @@
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+  background-image: url('/imgs/close-up.jpg') ;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: center;
+}
+
+.contact-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  border: .5rem outset #d2e8ff81;
+  text-align: center;
+}
+
+
+a{
+  text-decoration: none;
+  color: #005396;
+}
+
+.contact-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top:1.5rem;
+}
+
+h4{
+    padding-left: 2rem;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+
+#contact-header{
+  padding: 1rem;
+  font-size: x-large;
+}
+
+button{
+  border-radius: 20px;
+  background-color: #d2e8ff81;
+  border: none;
+  padding: .5rem;
+  width: 220px;
+  color: #005396;
+  font-weight: bold;
+}
+
+.subtext{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (min-width: 600px){
+    .subtext{
+        font-size: larger;
+    }
+
+    h4{
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 760px){
+  .contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    padding: 2rem;
+    margin: 2.5rem;
+    background-image: url('/imgs/close-up.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+  }
+  .subtext{
+      font-size: larger;
+  }
+
+}

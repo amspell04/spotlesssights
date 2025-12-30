@@ -1,0 +1,49 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  background-image: url('/imgs/review-bg.png') ;
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position: center;
+}
+
+.carousel-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  height: 100%;
+  width: 500px;
+  animation: scroll linear infinite;
+}
+
+.carousel-item {
+  display: flex;
+  flex: 0 0 auto;
+  width: 200px;
+  text-align: center;
+  height: 300px;
+  background-color: white;
+  padding: 2rem;
+  color: #005396;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* keyframes move the whole duplicated track by 50% (to the duplicate start) */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (min-width: 760px){
+  .carousel-container {
+  background-size: 100%;
+}
+
+  
+}
