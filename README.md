@@ -61,7 +61,7 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## PRODUCTION
 
-run : ng build --output-path=docs --base-href=/ --configuration=production
+run : ng build --base-href=/ --configuration=production
 
 then in the docs folder move everything to the root and delete browser
 
