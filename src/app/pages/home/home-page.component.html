@@ -1,48 +1,39 @@
-
 <app-navbar></app-navbar>
 
 <div class="header-container">
+  <picture>
+    <source media="(min-width: 768px)" srcset="imgs/header-new.png">
     <img src="imgs/header-new.png" alt="Spotless Sights Window Cleaning" id="header-img">
-  
+  </picture>
 </div>
 
+<section class="page-section">
+  <app-contact></app-contact>
+</section>
 
-  
-
-    <div style="margin-top: 2rem;">
-      
-        <app-contact></app-contact>
+<section class="page-section alt-bg">
+  <h4 class="section-title">Why choose us?</h4>
+  <div class="features-grid">
+    <div class="feature-item">
+      <p class="sub-header">Fully Insured</p>
+      <p class="reason-subs">Our full insurance coverage means your home and property are protected every step of the way, so you can relax knowing you're in safe, professional hands.</p>
     </div>
-
-     <div style="padding: 2rem; margin-top: 4rem;">
-        <h4>Why choose us?</h4>
-        <div class="d-flex flex-column flex-lg-row align-items-start justify-content-center gap-2 p-3">
-
-          <div class="subtext">
-            <p class='sub-header'>Fully Insured</p>
-            <p class="reason-subs">Our full insurance coverage means your home and property are protected every step of the way, so you can relax knowing you’re in safe, professional hands.</p>
-          </div>
-
-          <div class="subtext">
-            <p class='sub-header'>Flexible Scheduling</p>
-            <p class="reason-subs">We offer easy online scheduling through Jobber. You can book, reschedule, or manage appointments whenever it works best for you.</p>
-          </div>
-
-          <div class="subtext">
-            <p class='sub-header'>Transparent Pricing</p>
-            <p class="reason-subs">We provide clear, upfront pricing so you know exactly what to expect before we begin.</p>
-          </div>
-        </div>
+    <div class="feature-item">
+      <p class="sub-header">Flexible Scheduling</p>
+      <p class="reason-subs">We offer easy online scheduling through Jobber. You can book, reschedule, or manage appointments whenever it works best for you.</p>
     </div>
-
-
-    <div style="width: 100vw;  margin-top: 4rem;">
-    <app-review></app-review>
+    <div class="feature-item">
+      <p class="sub-header">Transparent Pricing</p>
+      <p class="reason-subs">We provide clear, upfront pricing so you know exactly what to expect before we begin.</p>
     </div>
+  </div>
+</section>
 
-    <div style="padding: 2rem; margin-top: 4rem;">
-      <h4>Meet Spotless Sights</h4>
+<div class="reviews-section">
+  <app-review></app-review>
+</div>
 
-      <app-about></app-about>
-    </div>
-
+<section class="page-section">
+  <h4 class="section-title">Meet Spotless Sights</h4>
+  <app-about></app-about>
+</section>

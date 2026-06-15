@@ -1,12 +1,35 @@
 <div class="carousel-container">
-    <div class="carousel-track" [style.animationDuration]="animationDuration">
-        @for(review of reviews; track review){
-            <div class="carousel-item">
-                {{review}}
-            </div>
+
+  <div class="carousel-outer"
+    (mouseenter)="pause()"
+    (mouseleave)="resume()"
+    (touchstart)="onTouchStart($event)"
+    (touchend)="onTouchEnd($event)">
+
+    <button class="nav-btn" (click)="prev()" aria-label="Previous review">&#8249;</button>
+
+    <div class="carousel-wrapper">
+      <div class="carousel-track" [style.transform]="trackTransform">
+        @for(review of reviews; track review) {
+          <div class="carousel-slide">
+            <mat-card class="review-card">
+              <mat-card-content>
+                <p class="review-text">"{{review}}"</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
         }
+      </div>
     </div>
 
-  
-</div>
+    <button class="nav-btn" (click)="next()" aria-label="Next review">&#8250;</button>
 
+  </div>
+
+  <div class="carousel-dots">
+    @for(i of dotIndices; track i) {
+      <button class="dot" [class.active]="i === currentIndex" (click)="goTo(i)" [attr.aria-label]="'Go to review ' + (i + 1)"></button>
+    }
+  </div>
+
+</div>

@@ -1,10 +1,9 @@
-import { Component, Inject, PLATFORM_ID, signal } from "@angular/core";
-
-import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
+import { MatAnchor } from "@angular/material/button";
 
 @Component({
     selector: 'app-contact',
-    imports: [CommonModule],
+    imports: [MatAnchor],
     standalone: true,
     templateUrl: './contact.component.html',
     styleUrl: './contact.component.scss',

@@ -1,23 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { FooterComponent } from './pages/sections/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet
-],
+  imports: [RouterOutlet, FooterComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
-
-export class AppComponent{
-
+export class AppComponent {
   title = 'spotless';
-  currimage: string = "";
-  photos = ["imgs/after1.jpg", "imgs/after2.jpg", "imgs/after3.jpg"]
-  index = 0;
-
-  
 }
-

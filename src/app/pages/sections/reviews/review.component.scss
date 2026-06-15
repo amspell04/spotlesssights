@@ -1,49 +1,134 @@
 .carousel-container {
   width: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 400px;
-  background-image: url('/imgs/review-bg.png') ;
+  background-image: url('/imgs/review-bg.png');
   background-repeat: no-repeat;
-  background-size: 250%;
+  background-size: cover;
   background-position: center;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.carousel-outer {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0.5rem;
+}
+
+.carousel-wrapper {
+  flex: 1;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .carousel-track {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem;
-  height: 100%;
-  width: 500px;
-  animation: scroll linear infinite;
+  align-items: stretch;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
-.carousel-item {
+.carousel-slide {
+  flex: 0 0 100%;
+  padding: 0.5rem 0.5rem;
+  box-sizing: border-box;
   display: flex;
-  flex: 0 0 auto;
-  width: 200px;
-  text-align: center;
-  height: 300px;
-  background-color: white;
-  padding: 2rem;
+  flex-direction: column;
+}
+
+mat-card.review-card {
+  flex: 1;
   color: #005396;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  text-align: center;
+  background-color: white !important;
+  box-shadow: 0 4px 20px rgba(0, 83, 150, 0.12) !important;
+
+  mat-card-content {
+    padding: 1.25rem 1rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-/* keyframes move the whole duplicated track by 50% (to the duplicate start) */
-@keyframes scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+.review-text {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0;
+  font-style: italic;
 }
 
-@media (min-width: 760px){
-  .carousel-container {
-  background-size: 100%;
+.nav-btn {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #005396;
+  font-size: 1.75rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  padding: 0;
+
+  &:hover {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 83, 150, 0.2);
+  }
 }
 
-  
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 83, 150, 0.25);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
+
+  &.active {
+    background: #005396;
+    transform: scale(1.3);
+  }
+}
+
+@media (min-width: 600px) {
+  .carousel-slide {
+    flex: 0 0 50%;
+  }
+
+  .review-text {
+    font-size: 0.875rem;
+  }
+
+  .nav-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-slide {
+    flex: 0 0 33.333%;
+  }
+
+  .review-text {
+    font-size: 0.875rem;
+  }
 }
