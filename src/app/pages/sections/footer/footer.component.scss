@@ -23,7 +23,7 @@
 
 
 .footer-logo {
-  height: 100px;
+  height: 80px;
   width: auto;
   object-fit: contain;
 }
@@ -60,9 +60,9 @@
   text-align: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 300px) {
   .footer-inner {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;

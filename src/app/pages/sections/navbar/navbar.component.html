@@ -2,8 +2,17 @@
 <mat-toolbar class="navbar-toolbar">
   <img src="imgs/header-logo.png" alt="Spotless Sights Logo" class="navbar-logo" (click)="navHome()">
   <span class="spacer"></span>
-  <div class="nav-buttons">
-    <a mat-button class="nav-button" [routerLink]="['/gallery']">Gallery</a>
-    <a mat-button class="nav-button" href="https://clienthub.getjobber.com/client_hubs/4d9f8932-6bce-4a6a-8c79-3bce14d04a42/public/work_request/new?source=social_media">Schedule Quote Online</a>
-  </div>
+  <button mat-icon-button [matMenuTriggerFor]="navMenu" aria-label="Open navigation menu">
+    <img src="imgs/navbar-options.png" class="menu-icon" alt="Menu">
+  </button>
 </mat-toolbar>
+
+
+
+<mat-menu #navMenu="matMenu" class="nav-menu">
+  @if(isNothome()){
+    <button mat-menu-item [routerLink]="['/']">Home</button>
+  }
+  <button mat-menu-item [routerLink]="['/gallery']">Gallery</button>
+  <a mat-menu-item href="https://clienthub.getjobber.com/client_hubs/4d9f8932-6bce-4a6a-8c79-3bce14d04a42/public/work_request/new?source=social_media">Schedule Quote Online</a>
+</mat-menu>
