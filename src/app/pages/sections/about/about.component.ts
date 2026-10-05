@@ -1,10 +1,10 @@
 import { Component, Inject, PLATFORM_ID, signal } from "@angular/core";
 
-import { CommonModule } from "@angular/common";
+
 
 @Component({
     selector: 'app-about',
-    imports: [CommonModule],
+    imports: [],
     standalone: true,
     templateUrl: './about.component.html',
     styleUrl: './about.component.scss',

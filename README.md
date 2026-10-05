@@ -61,8 +61,6 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## PRODUCTION
 
-run : ng build --base-href=/ --configuration=production
+run : npm run build (output goes to dist/spotlesssights)
 
-then in the docs folder move everything to the root and delete browser
-
-then save commit changes and push, github actions handles deployment
+then commit and push, github actions builds and deploys to Firebase Hosting

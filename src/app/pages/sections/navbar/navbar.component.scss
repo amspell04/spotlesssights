@@ -1,7 +1,8 @@
 .navbar-toolbar {
   background-color: #D2E8FF;
-  color: #005396;
-  padding: 0 0.75rem;
+  color: #005396 !important;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
   box-sizing: border-box;
   box-shadow: 0 2px 8px rgba(0, 83, 150, 0.1);
@@ -11,7 +12,7 @@
 }
 
 .navbar-logo {
-  height: 48px;
+  height: 55px;
   width: auto;
   cursor: pointer;
   padding: 4px 0;
@@ -25,4 +26,30 @@
   width: 22px;
   height: 22px;
   object-fit: contain;
+}
+
+.nav-buttons{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-button ::ng-deep .mat-mdc-button-touch-target {
+  display: none;
+}
+
+.nav-button {
+  text-align: center;
+  color: #005396;
+  font-weight: 500;
+  font-size: medium;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  text-decoration: none;
+
+  &:hover {
+    color: #005296a5;
+    text-decoration: underline;
+  }
 }

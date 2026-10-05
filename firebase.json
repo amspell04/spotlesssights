@@ -1,15 +1,27 @@
 {
   "hosting": {
-    "public": "docs",
+    "public": "dist/spotlesssights",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
+    "trailingSlash": false,
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000, immutable"
+          }
+        ]
       }
     ]
   }
